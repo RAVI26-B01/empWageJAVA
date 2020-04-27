@@ -5,10 +5,13 @@ public class empWage {
                 int is_full_time=1;
                 double emp_check=Math.floor(Math.random()*10)%2;
                 if(emp_check==is_full_time){
-                        System.out.println("present");
+			int emp_rate_per_hour=20;
+			int emp_hours=8;
+                        int Salary=(emp_rate_per_hour*emp_hours);
+			System.out.println(Salary);
                 }
                 else {
-                        System.out.println("absent");
+                        System.out.println(0);
                 }
         }
 }
